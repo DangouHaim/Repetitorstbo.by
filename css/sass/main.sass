@@ -1,0 +1,559 @@
+@import "bourbon/bourbon"
+
+$text-color: #333
+$dark-color: #000
+$red-color: #981818
+$blue-color: #003469
+$green-color: #67bc5c
+
+body
+	font-family: "RobotoRegular", sans-serif
+	color: $text-color
+	font-weight: normal
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	-webkit-font-smoothing: antialised
+	overflow-x: hidden
+	overflow:hidden
+	padding: 0
+	margin: 0
+	width: 100%
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+	box-shadow: $red-color 0 0 0 2px
+	border-color: $red-color
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+h1
+	color: #fff
+	font-size: 60px
+	line-height: 56px
+	font-weoght: bold
+	font-family: "CleanvertisingLight", sans-serif
+	margin: 0
+
+section, footer
+	padding: 58px 0 68px
+	&.s_dark
+		h2, h3, p
+			color: #fff
+	h2
+		color: $blue-color
+		font-size: 50px
+		line-height: 56px
+		margin-bottom: 50px
+		font-family: "CleanvertisingLight", sans-serif
+		text-align: center
+		margin-top: 0
+		font-weoght: normsl
+
+p strong
+	font-family: "RobotoBold", sans-serif
+	font-weoght: normal
+
+.hidden
+	display: none
+
+header
+	background-image: url(../img/top_bg.jpg)
+	min-height: 640px
+	background-position: top center
+	background-size: cover
+	color: #fff
+	padding-top: 32px
+	padding-bottom: 40px
+
+.logo_wrapper
+	margin-top: -5px
+	margin-left: -5px
+	text-align: left
+
+.logo
+	font-size: 40px
+	font-family: "RobotoRegular", sans-serif
+	font-weoght: bold
+	display: inline-block
+	vertical-align: middle
+
+.logo_img
+	background-image: url(../img/logo.png)
+	background-position: center
+	background-size: cover
+	width: 50px
+	height: 50px
+	display: inline-block
+	vertical-align: middle
+	margin-right: 10px
+
+.top_phone, .bottom_phone
+	text-align: right
+
+.top_phone, .bottom_phone 
+	.wrapper .tab
+		text-transform: uppercase
+		cursor: pointer
+
+.top_phone, .bottom_phone
+	.wrapper .active
+		text-decoration: underline
+
+.top_phone, .bottom_phone
+	.tab_item
+		font-size: 34px
+		font-family: "RobotoBold", sans-serif
+		text-decoration: none
+
+.tab_item
+	display: none
+
+.tab_item:first-chold
+	display: block
+
+.top_header 
+	margin-top: 70px
+	h2
+		margin: 10px 0 0
+		font-family: "CleanvertisingLight", sans-serif
+		font-size: 36px
+
+.tabs_header
+	margin-top: 50px
+	min-height: 400px
+
+	ul, li
+		list-style-type: none
+		margin: 0
+		padding: 0
+
+	li
+		padding-left: 40px
+		position: relative
+		margin-bottom: 12px
+
+	i
+		padding: 2px 5px
+		padding-left: 10px
+		position: absolute
+		left: 0
+		top: 0
+		line-height: 45px
+		color: #6f6a67
+		letter-spacing: 0px
+
+	.tabs
+		.tab
+			display: inline-block
+			background-color: rgba(255, 255, 255, .25)
+			padding: 15px 18px
+			text-transform: uppercase
+			cursor: pointer
+			float: left
+			font-family: "RobotoBold", sans-serif
+			+transition(all .25s ease)
+
+			&.active
+				background-color: rgba(255, 255, 255, .60)
+				color: #000
+	.tab_content
+		color: #000
+		font-size: 18px
+		background-color: rgba(255, 255, 255, .60)
+		padding: 15px 18px 16px
+		text-transform: uppercase
+		font-family: "RobotoBold", sans-serif
+
+
+.button
+	border: none
+	cursor: pointer
+	display: inline-block
+	height: 46px
+	line-height: 46px
+	padding: 0 32px
+	background-color: #000
+	text-transform: uppercase
+	text-align: center
+	color: #fff
+	border-radius: 3px
+	font-size: 16px
+	font-family: "RobotoBold", sans-serif
+	&.btn_red
+		background-color: $red-color
+	&.btn_green
+		background-color: $green-color
+	&.btn_white
+		background-color: #fff
+		color: #000
+
+.button_wrap
+	text-align: center
+
+a.button
+	color: #fff
+	text-decoration: none
+
+.s_tizers
+	+linear-gradient(#c6d8ee, #e8eff7)
+	color: $blue-color
+	font-family: "CleanvertisingLight", sans-serif
+	text-transform: uppercase
+	padding: 35px 0 0
+
+	span
+		font-size: 14px
+		display: block
+
+	strong
+		font-weoght: normal
+		font-size: 23px
+		display: block
+
+	.row
+		>div
+			margin-bottom: 35px
+
+.tiz_img, .tiz_descr
+	display: inline-block
+
+.tiz_img i
+	font-size: 100px
+	line-height: 10px
+	letter-spacing: -30px
+	vertical-align: bottom
+
+.s_tizers .row 
+	> div:nth-child(1) 
+		i
+			font-family: "RobotoRegular", sans-serif
+			letter-spacing: -12px
+			margin-right: 18px
+			line-height: 42px
+			font-size: 65px
+			padding-bottom: 10px
+
+		span
+			font-size: 13px
+			line-height: 28px
+			height: 24px
+
+		strong
+			font-size: 18px
+			line-height: 18px
+
+	> div:nth-child(2) 
+		strong
+			line-height: 28px
+
+		span
+			font-size: 15px
+			line-height: 24px
+
+	> div:nth-child(3) 
+		strong
+			line-height: 28px
+
+		span
+			line-height: 24px
+
+	> div:nth-child(4) 
+		span
+			font-size: 13px
+			line-height: 20px
+
+.profi_item
+	display: block
+	float: left
+
+.profi_left
+	color: $red-color
+
+	i
+		font-size: 150px
+		line-height: 190px
+		letter-spacing: -50px
+
+.profi_right
+	h3
+		display: inline-block
+		margin: 0
+		color: $red-color
+		font-size: 28px
+
+	p
+		margin-top: 5px
+
+form
+	background-color: #f7f7f7
+	padding: 25px 30px
+	border: 5px solid $green-color
+	border-radius: 5px
+	margin-top: 150px
+
+	h2
+		text-transform: uppercase
+		margin-top: 0
+		font-family: "RobotoBold", sans-serif
+		font-size: 22px
+		color: $text-color
+		line-height: 22px
+		margin-bottom: 30px
+
+	label
+		display: block
+		margin-bottom: 15px
+		color: #666
+		font-size: 14px
+
+	input, select
+		display: block
+		line-height: 40px
+		height: 40px
+		border: solid 1px #d9d9d9
+		box-shadow: 0 0 20px rgba(0, 0, 0, .06) inset
+		width: 100%
+		text-indent: 10px
+		font-size: 20px
+		margin-top: 3px
+
+
+
+		&:focus
+			box-shadow: $green-color 0 0 0 2px
+			border-radius: 3px
+			border-color: $green-color
+
+	.button_wrap
+		text-align: center
+		margin: 30px 0 10px
+
+.s_review
+	background-image: url(../img/middle_bg.jpg)
+	background-repeat: repeat-x
+	background-attachment: fixed
+	min-height: 500px
+	background-position: top center
+	background-size: cover
+	background-color: #412521
+
+.review_item
+	color: #fff
+	text-align: center
+
+	.image_wrap
+		text-align: center
+
+		img
+			width: 165px
+			height: 165px
+			display: inline-block
+			border-radius: 50%
+			border: solid 10px #585458
+
+	h4
+		font-family: "Times New Roman", serif
+		font-size: 22px
+		font-weoght: normal
+		margin-top: 20px
+		margin-bottom: 0
+
+	.rep_class
+		p
+			font-size: 12px
+			margin: 0
+			margin-bottom: 25px
+			opacity: .7
+			font-style: italic
+
+	p
+		margin: 30px auto 0
+		display: inline-block
+		float: none
+		font-size: 15px
+
+.hr
+	width: 80px
+	height: 1px
+	background-color: #cea380
+	margin: auto
+
+.owl-nav
+	div
+		width: 34px
+		height: 140px
+		background-image: url(../img/s_arrows.png)
+		top: 20px
+		position: absolute
+		opacity: .6
+
+		&.owl-next
+			right: 0
+			background-position: top right
+
+		&:hover
+			opacity: 1
+
+.owl-dots
+	width: 100%
+	margin-top: 20px
+	text-align: center
+
+	.owl-dot
+		width: 14px
+		height: 14px
+		background-color: #fff
+		display: inline-block
+		margin: 0 4px
+		border-radius: 50%
+		opacity: .5
+
+		&.active
+			opacity: .8
+
+.s_back
+	background-image: url(../img/red_bg.jpg)
+	background-position: top center
+	text-align: center
+	padding: 40px 0
+	
+	h3
+		margin-top: 0
+		text-transform: uppercase
+		font-weoght: normal
+		font-size: 26px
+		background-color: rgba(255, 255, 255, .13)
+		padding: 10px 0
+
+	.button
+		margin: auto
+
+.s_contacts
+	text-align: center
+	padding-bottom: 0
+
+	h2
+		color: #000
+		display: inline-block
+		vertical-align: middle
+		margin-bottom: 0
+		height: 45px
+		line-height: 45px
+
+	.tabs
+		display: inline-block
+		vertical-align: middle
+		height: 45px
+		line-height: 45px
+		margin-left: 20px
+
+		.tab
+			float: left
+			padding: 0 60px
+			border-radius: 0
+			border: 5px solid $red-color
+			line-height: 38px
+			color: $red-color
+
+			&:first-child	
+				border-radius: 3px 0 0 3px
+
+			&:last-child	
+				border-radius: 0 3px 3px 0
+
+			&.active
+				background-color: $red-color
+				color: #fff
+
+	.wrapper
+		margin-top: 15px
+		font-size: 18px
+
+.map
+	margin-top: 20px
+	min-height: 480px
+	background-color: #e1d6b0
+
+	iframe
+		border: 0
+		margin: 0
+		padding: 0
+		vertical-align: middle
+
+footer
+	h2
+		color: #000
+		margin-bottom: 30px
+
+	p
+		font-size: 18px
+		text-align: center
+		margin-top: 0
+
+	.button_wrap
+		text-align: center
+		margin-top: 30px
+
+.bottom_phone
+	text-align: center
+	margin-top: 15px
+	color: $red-color
+
+#hidden_form, #form_back
+	max-width: 420px
+	margin: auto
+	position: relative
+
+	h2
+		text-align: center
+		font-weoght: normal
+
+.top_phone .tab_content .img_wrapper
+	img
+		width: 50px
+		height: 50px
+		margin-left: 5px
+
+.s_back
+	.button_wrap
+		text-align: center
+
+.bottom_wrap 
+	margin-top: 30px
+
+	p
+		margin-top: 0
+		font-size: 12px
+		line-height: 12px
+
+	a
+		text-align: center
+
+.ref
+	display: block
+	text-decoration: none
+	text-transform: uppercase
+	color: $red-color
+	font-size: 12px
+	margin-bottom: 10px
+
+	&:hover
+		opacity: .8
+		text-decoration: none
+		color: $red-color
+
+.mask
+	background: transparent
+	position: absolute
+	width: 100%
+	height: 0
+
+.overlay
+	background: transparent
+	position: absolute
+	width: 100%
+	height: 480px
